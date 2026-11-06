@@ -24,6 +24,7 @@ dnf5 -y install \
     dux-calendar-git \
     dux-search \
     dux-gop \
+    dux-files \
     dms \
     dux-greeter \
     greetd \
