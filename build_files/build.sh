@@ -19,12 +19,11 @@ dnf5 -y copr enable duxlabs/dux-repo
 dnf5 -y install \
     acl \
     bluetui \
-    breakpad \
     cliphist \
     cava \
     dux-calendar-git \
     dux-search \
-    dgop \
+    dux-gop \
     dms \
     dux-greeter \
     greetd \
@@ -40,6 +39,11 @@ dnf5 -y install \
     tmux \
     wl-clipboard \
     xwayland-satellite
+
+# breakpad doesn't seem to be available from duxlabs/dux-repo, so I'm setting
+# it to skip-unavailable separately from the above since it's optional.
+dnf5 -y install --skip-unavailable \
+    breakpad
 
 dnf5 -y copr disable irunatbullets/spacium-extras
 dnf5 -y copr disable duxlabs/dms
