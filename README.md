@@ -12,11 +12,11 @@
 
 This custom **Bazzite** image is based on `bazzite-gnome` with variants for the Nvidia open driver as well as Nouveau.
 
-It includes **Dank Material Shell** and **niri**
-along with all of the recommended extras for Dank Linux.
+It includes **Dux Modular Shell** and **niri**
+along with all of the recommended extras for DMS.
 
 My goal with this image is to offer a vanilla DMS/niri experience with gaming
-capabilities (via Bazzite). I have added **ghostty** as the default termianl
+capabilities (via Bazzite). I have added **ghostty** as the default terminal
 along with tools to allow developers to create their own DMS plugins.
 
 Feel free to suggest additional software - or just fork this repo and do
@@ -50,7 +50,7 @@ Updates will not retrigger this event.
 
 ## Known issues and workarounds
 
-### How do I change the dms greeter's background?!
+### How do I change dux greeter's background?!
 
 To enable background image syncing with the dms greeter, run the
 following from your terminal and follow the steps:
@@ -84,9 +84,9 @@ ujust add-user-to-input-group
 ## Credits:
 
 - https://bazzite.gg/
-- https://danklinux.com/
+- https://duxlabs.dev/
 - https://github.com/niri-wm/niri
-- https://github.com/bazzirco/bazzirco (for the dms-greeter workaround)
+- https://github.com/bazzirco/bazzirco (for the dux-greeter workaround)
 - https://tsuburaya-prod.com/ (for Ultraman, the inspiration behind the name of this image)
 - https://zone108.main.jp/s/jp-005gontakana.php<br>FZゴンタかな is licensed under the [SIL Open Font License, Version 1.1](https://github.com/irunatbullets/spacium/blob/5ce3fb4974ead6809fc2b79f841c56f48572e577/assets/licenses/FZ%E3%82%B3%E3%82%99%E3%83%B3%E3%82%BF%E3%81%8B%E3%81%AA-OFL-1.1.md).
 
