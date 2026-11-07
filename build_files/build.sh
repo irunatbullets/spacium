@@ -41,11 +41,6 @@ dnf5 -y install \
     wl-clipboard \
     xwayland-satellite
 
-# breakpad doesn't seem to be available from duxlabs/dux-repo, so I'm setting
-# it to skip-unavailable separately from the above since it's optional.
-dnf5 -y install --skip-unavailable \
-    breakpad
-
 dnf5 -y copr disable irunatbullets/spacium-extras
 dnf5 -y copr disable duxlabs/dms
 dnf5 -y copr disable duxlabs/dux-repo
