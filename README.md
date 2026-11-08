@@ -110,7 +110,7 @@ ujust add-user-to-input-group
 
 ## Legal Notice
 
-This project is NOT affiliated with Bazzite, DankLinux, Niri or Tsuburaya.
+This project is NOT affiliated with Bazzite, Dux Labs, Niri or Tsuburaya.
 
 The software is developed independently and provided as-is, without warranties of any kind. Use at your own risk.
 
