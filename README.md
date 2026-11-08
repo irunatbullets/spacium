@@ -50,6 +50,24 @@ Updates will not retrigger this event.
 
 ## Known issues and workarounds
 
+### A weird file manager appears sometimes (when opening firefox download locations, for example)
+
+This is the new dux-files (dfiles) file manager. I added it to test it out because I really want Spacium to be as close to a complete DMS experience as I can make it. If you just want to stick with gnome files:
+
+1. Open DMS settings (Super + ,)
+2. Go to Applications > Default apps (or just search for "Default apps")
+3. Configure `File manager`, `Archive manager`, and any others to open your preferred application.
+
+If it is still opening in some scenarios:
+
+1. Launch "Files" via the launch or in a terminal by running `dfiles`
+2. Open the settings via the "three dots under the close button" > Settings
+3. Switch off "Register as the session file manager"
+
+If you'd **prefer** to use this new file manager, then do the opposite of the above!
+
+For more information, check out [Dux Labs documentation about Dux Files](https://duxlabs.dev/docs/dfiles)
+
 ### How do I change dux greeter's background?!
 
 To enable background image syncing with the dms greeter, run the
