@@ -40,15 +40,15 @@ sudo bootc switch ghcr.io/irunatbullets/spacium-nouveau
 ```
 
 **Important Note:** After switching to this image the login will backup any
-existing niri configutation and replace it with standard dms niri configs.
-Updates will not retrigger this event.
+existing niri configuration and replace it with standard dms niri configs.
+Updates will not re-trigger this event.
 
 ## What my selection of additional applications achieve
 
 - **ghostty** - nothing, I just switched to it when I started using dms.
 - **bluetui** - an application for configuring multiple Bluetooth receivers.
 
-## Known issues and workarounds
+## Notes, Workarounds
 
 ### A weird file manager appears sometimes (when opening firefox download locations, for example)
 
@@ -67,6 +67,59 @@ If it is still opening in some scenarios:
 If you'd **prefer** to use this new file manager, then do the opposite of the above!
 
 For more information, check out [Dux Labs documentation about Dux Files](https://duxlabs.dev/docs/dfiles)
+
+### Optional: Use Dux Files for file dialogs
+
+Spacium uses the GTK file chooser by default. If you prefer Dux Files for application file dialogs, you can switch to its XDG Desktop Portal integration.
+
+First, enable the Dux Files portal:
+
+```bash
+dfiles portal install
+```
+
+Create a personal copy of Spacium's portal configuration:
+
+```bash
+mkdir -p ~/.config/xdg-desktop-portal
+
+cp /usr/share/xdg-desktop-portal/niri-portals.conf \
+   ~/.config/xdg-desktop-portal/niri-portals.conf
+```
+
+Edit your personal copy:
+
+```bash
+nano ~/.config/xdg-desktop-portal/niri-portals.conf
+```
+
+Change:
+
+```ini
+org.freedesktop.impl.portal.FileChooser=gtk;
+```
+
+to:
+
+```ini
+org.freedesktop.impl.portal.FileChooser=dfiles;
+```
+
+Restart the portal:
+
+```bash
+systemctl --user restart xdg-desktop-portal
+```
+
+You can verify the configuration with:
+
+```bash
+dfiles portal status
+```
+
+This changes the file chooser used by applications that support XDG Desktop Portals. It does not change your default file manager.
+
+Your personal configuration takes precedence over Spacium's system-wide configuration, so this change will persist across image updates unless you remove your personal override.
 
 ### How do I change dux greeter's background?!
 
