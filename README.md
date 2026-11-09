@@ -52,7 +52,9 @@ Updates will not re-trigger this event.
 
 ### A weird file manager appears sometimes (when opening firefox download locations, for example)
 
-This is the new dux-files (dfiles) file manager. I added it to test it out because I really want Spacium to be as close to a complete DMS experience as I can make it. If you just want to stick with gnome files:
+This is the new dux-files (dfiles) file manager. I added it to test it out because I really want Spacium to be as close to a complete DMS experience as I can make it. 
+
+For now I've tried my best to keep gnome-files as the default. However, if you are seeing dfiles popup you can tweak your default apps:
 
 1. Open DMS settings (Super + ,)
 2. Go to Applications > Default apps (or just search for "Default apps")
@@ -64,9 +66,7 @@ If it is still opening in some scenarios:
 2. Open the settings via the "three dots under the close button" > Settings
 3. Switch off "Register as the session file manager"
 
-If you'd **prefer** to use this new file manager, then do the opposite of the above!
-
-For more information, check out [Dux Labs documentation about Dux Files](https://duxlabs.dev/docs/dfiles)
+If you'd **prefer** to use the new manager, then do the opposite of the above, and the follow the optional guide below.
 
 ### Optional: Use Dux Files for file dialogs
 
@@ -120,6 +120,8 @@ dfiles portal status
 This changes the file chooser used by applications that support XDG Desktop Portals. It does not change your default file manager.
 
 Your personal configuration takes precedence over Spacium's system-wide configuration, so this change will persist across image updates unless you remove your personal override.
+
+For more information, check out [Dux Labs documentation about Dux Files](https://duxlabs.dev/docs/dfiles)
 
 ### How do I change dux greeter's background?!
 
