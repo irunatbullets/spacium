@@ -82,3 +82,5 @@ jq \
   /usr/share/ublue-os/image-info.json \
   > /tmp/image-info.json && mv /tmp/image-info.json /usr/share/ublue-os/image-info.json
 
+install -Dm644 /ctx/configs/niri-portals.conf \
+    /usr/share/xdg-desktop-portal/niri-portals.conf
