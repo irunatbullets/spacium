@@ -3,6 +3,7 @@ set -ouex pipefail
 
 IMAGE_NAME="${IMAGE_NAME:-spacium}"
 IMAGE_VARIANT="${IMAGE_VARIANT:-}"
+IMAGE_TAG="${IMAGE_TAG:-latest}"
 
 if [ -z "$IMAGE_VARIANT" ]; then
   FULL_NAME="$IMAGE_NAME"
@@ -73,7 +74,7 @@ ln -s /usr/lib/systemd/user/dsearch.service \
 jq \
   --arg name "$FULL_NAME" \
   --arg ref "$IMAGE_REF" \
-  --arg tag "${IMAGE_VARIANT:-latest}" \
+  --arg tag "$IMAGE_TAG" \
   '
   .["image-name"]=$name |
   .["image-ref"]=$ref |

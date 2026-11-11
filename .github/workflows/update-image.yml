@@ -172,6 +172,7 @@ jobs:
           labels: ${{ steps.metadata.outputs.labels }}
           build-args: |
             BASE_IMAGE=${{ matrix.base_image }}
+            IMAGE_TAG=${{ env.DEFAULT_TAG }}
           oci: false
 
       - name: Log in to GHCR

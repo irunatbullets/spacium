@@ -1,4 +1,5 @@
 ARG BASE_IMAGE=ghcr.io/ublue-os/bazzite-gnome:stable
+ARG IMAGE_TAG=latest
 
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS buildctx
