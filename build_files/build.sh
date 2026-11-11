@@ -37,7 +37,7 @@ dnf5 -y install \
     qt6-qtimageformats \
     qt6-qtmultimedia \
     qt6-qtsvg \
-    quickshell-git \
+    dux-qt-base \
     tmux \
     wl-clipboard \
     xwayland-satellite
