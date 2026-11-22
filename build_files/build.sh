@@ -42,6 +42,19 @@ dnf5 -y install \
     wl-clipboard \
     xwayland-satellite
 
+# Make Nautilus the default D-Bus file manager.
+# This takes precedence over the conflicting Dux Files registration
+# in /usr/share/dbus-1/services/.
+mkdir -p /usr/local/share/dbus-1/services
+
+cat > /usr/local/share/dbus-1/services/org.freedesktop.FileManager1.service <<'EOF'
+[D-BUS Service]
+Name=org.freedesktop.FileManager1
+Exec=/usr/bin/nautilus --gapplication-service
+EOF
+
+chmod 0644 /usr/local/share/dbus-1/services/org.freedesktop.FileManager1.service
+
 dnf5 -y copr disable irunatbullets/spacium-extras
 dnf5 -y copr disable duxlabs/dms
 dnf5 -y copr disable duxlabs/dux-repo
