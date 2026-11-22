@@ -10,10 +10,6 @@
   <a href="https://github.com/irunatbullets/spacium/actions/workflows/update-image.yml"><img src="https://github.com/irunatbullets/spacium/actions/workflows/update-image.yml/badge.svg" alt="Update image"></a> <a href="https://github.com/irunatbullets/spacium"><img src="https://img.shields.io/github/last-commit/irunatbullets/spacium" alt="Last Commit"></a>
 </p>
 
-# Spacium
-
-[Update image](https://github.com/irunatbullets/spacium/actions/workflows/update-image.yml) ([![Update image](https://github.com/irunatbullets/spacium/actions/workflows/update-image.yml/badge.svg)](https://github.com/irunatbullets/spacium/actions/workflows/update-image.yml)) [Last Commit](https://github.com/irunatbullets/spacium) ([![Last Commit](https://img.shields.io/github/last-commit/irunatbullets/spacium)](https://github.com/irunatbullets/spacium))
-
 > [!NOTE]
 > I've recently switched from `quickshell` to Dux Labs' own `dux-qt-base`, which is more up-to-date. The only migration step that may be required is reapplying your desktop theme.
 
